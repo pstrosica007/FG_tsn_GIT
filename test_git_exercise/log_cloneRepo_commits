@@ -1,0 +1,295 @@
+Andrea-MacBook-Air:~ andreaolexova$ git clone https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git
+Cloning into 'FG_tsn_GIT'...
+remote: Enumerating objects: 45, done.
+remote: Counting objects: 100% (45/45), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 45 (delta 9), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (45/45), 128.83 KiB | 1.63 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+Andrea-MacBook-Air:~ andreaolexova$ ls -ltr
+total 0
+drwxr-xr-x+  4 andreaolexova  staff   128 26 črv  2022 Public
+drwx------+  3 andreaolexova  staff    96 26 črv  2022 Music
+drwx------+  3 andreaolexova  staff    96 26 črv  2022 Documents
+drwx------@  3 andreaolexova  staff    96 26 črv  2022 Applications
+drwx------+  4 andreaolexova  staff   128 10 čvc  2022 Pictures
+drwx------+  4 andreaolexova  staff   128 15 čvc  2022 Movies
+drwx------@ 90 andreaolexova  staff  2880 24 led  2023 Library
+drwxr-xr-x   4 andreaolexova  staff   128  3 čvc 14:16 PycharmProjects
+drwx------+ 97 andreaolexova  staff  3104 28 čvc 00:11 Downloads
+drwx------+ 12 andreaolexova  staff   384 28 čvc 00:16 Desktop
+drwxr-xr-x   6 andreaolexova  staff   192 28 čvc 00:58 FG_tsn_GIT
+Andrea-MacBook-Air:~ andreaolexova$ ls -ltr FG_tsn_GIT/
+total 360
+-rw-r--r--  1 andreaolexova  staff    7781 28 čvc 00:58 README.md
+-rw-r--r--  1 andreaolexova  staff  170868 28 čvc 00:58 cheatsheet_GIT.pdf
+-rw-r--r--  1 andreaolexova  staff    2765 28 čvc 00:58 git_commands.txt
+Andrea-MacBook-Air:~ andreaolexova$ cd FG_tsn_GIT/
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ mkdir test_git_exercise
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ cd test_git_exercise/
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ touch file1
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ touch file2
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ touch file_users
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ ls -ltr
+total 0
+-rw-r--r--  1 andreaolexova  staff  0 28 čvc 01:04 file1
+-rw-r--r--  1 andreaolexova  staff  0 28 čvc 01:04 file2
+-rw-r--r--  1 andreaolexova  staff  0 28 čvc 01:04 file_users
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ vi file1
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ cat file1
+# This program prints Hello, world!
+
+print('Hello, world!')
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ vi file2
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ cat file2
+- nainstalovat CENTOS
+- nastavit network
+- nastavit hostname
+- pripojit se remotne
+- nainstalovat ansible
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ vi file_users 
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ cat file_users 
+Andrea
+Jakub
+Honza
+Katy
+Filip
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ touch .gitignore
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ ls -ltra
+total 24
+drwxr-xr-x  7 andreaolexova  staff  224 28 čvc 01:04 ..
+-rw-r--r--  1 andreaolexova  staff   60 28 čvc 01:06 file1
+-rw-r--r--  1 andreaolexova  staff  106 28 čvc 01:08 file2
+-rw-r--r--  1 andreaolexova  staff   30 28 čvc 01:08 file_users
+-rw-r--r--  1 andreaolexova  staff    0 28 čvc 01:09 .gitignore
+drwxr-xr-x  6 andreaolexova  staff  192 28 čvc 01:09 .
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ 
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git add --all
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .gitignore
+	new file:   file1
+	new file:   file2
+
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git commit -m "prvni commit"
+[main 873c76c] prvni commit
+ Committer: Andrea Olexová <andreaolexova@Andrea-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 9 insertions(+)
+ create mode 100644 test_git_exercise/.gitignore
+ create mode 100644 test_git_exercise/file1
+ create mode 100644 test_git_exercise/file2
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git config --list
+credential.helper=osxkeychain
+init.defaultbranch=main
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git config --global user.name "Andy"
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git config --list
+credential.helper=osxkeychain
+init.defaultbranch=main
+user.name=Andy
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git push
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/pstrosica007/FG_tsn_GIT.git/'
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git push
+Password for 'https://pstrosica007@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 548 bytes | 548.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pstrosica007/FG_tsn_GIT.git
+   9876194..873c76c  main -> main
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ 
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ 
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ ls -ltr
+total 360
+-rw-r--r--  1 andreaolexova  staff    7781 28 čvc 00:58 README.md
+-rw-r--r--  1 andreaolexova  staff    2765 28 čvc 00:58 git_commands.txt
+drwxr-xr-x  6 andreaolexova  staff     192 28 čvc 01:11 test_git_exercise
+-rw-r--r--  1 andreaolexova  staff  170868 28 čvc 01:27 cheatsheet_GIT.pdf
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ cd test_git_exercise/
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ ls -ltra
+total 32
+-rw-r--r--  1 andreaolexova  staff   60 28 čvc 01:06 file1
+-rw-r--r--  1 andreaolexova  staff  106 28 čvc 01:08 file2
+-rw-r--r--  1 andreaolexova  staff   30 28 čvc 01:08 file_users
+-rw-r--r--  1 andreaolexova  staff   11 28 čvc 01:11 .gitignore
+drwxr-xr-x  6 andreaolexova  staff  192 28 čvc 01:11 .
+drwxr-xr-x  7 andreaolexova  staff  224 28 čvc 01:27 ..
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ vi file2
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ cd ..
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test_git_exercise/file2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git add test_git_exercise/file2
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   test_git_exercise/file2
+
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git commit -m "update FILE2"
+[main 69c20f1] update FILE2
+ Committer: Andy <andreaolexova@Andrea-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 382 bytes | 382.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pstrosica007/FG_tsn_GIT.git
+   873c76c..69c20f1  main -> main
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ 
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ ls -ltr
+total 360
+-rw-r--r--  1 andreaolexova  staff    7781 28 čvc 00:58 README.md
+-rw-r--r--  1 andreaolexova  staff    2765 28 čvc 00:58 git_commands.txt
+drwxr-xr-x  6 andreaolexova  staff     192 28 čvc 01:11 test_git_exercise
+-rw-r--r--  1 andreaolexova  staff  170868 28 čvc 01:27 cheatsheet_GIT.pdf
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ cd test_git_exercise/
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ ls -ltra
+total 32
+-rw-r--r--  1 andreaolexova  staff   60 28 čvc 01:06 file1
+-rw-r--r--  1 andreaolexova  staff  106 28 čvc 01:08 file2
+-rw-r--r--  1 andreaolexova  staff   30 28 čvc 01:08 file_users
+-rw-r--r--  1 andreaolexova  staff   11 28 čvc 01:11 .gitignore
+drwxr-xr-x  6 andreaolexova  staff  192 28 čvc 01:11 .
+drwxr-xr-x  7 andreaolexova  staff  224 28 čvc 01:27 ..
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ vi file2
+Andrea-MacBook-Air:test_git_exercise andreaolexova$ cd ..
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test_git_exercise/file2
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git add test_git_exercise/file2
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   test_git_exercise/file2
+
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git commit -m "update FILE2"
+[main 69c20f1] update FILE2
+ Committer: Andy <andreaolexova@Andrea-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 382 bytes | 382.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pstrosica007/FG_tsn_GIT.git
+   873c76c..69c20f1  main -> main
+Andrea-MacBook-Air:FG_tsn_GIT andreaolexova$ 
