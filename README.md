@@ -1,6 +1,6 @@
 # Introduction
 Let's discuss about git repo. Why we really need it, why now and why here.
-Quick view into GIT basics and not only.
+Quick view into GIT basics and not only that.
 
 ## Workshop goals
 1. to have a tech talk (with no pressure and deadlines)
