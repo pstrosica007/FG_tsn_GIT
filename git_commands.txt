@@ -1,0 +1,108 @@
+---- setup user account
+$git config --global user.name "Andrea Olexova"
+$git config --global user.email "andrea.olexova@tesena.com"
+
+---- enables helpful colorization of command line output
+$git config --global color.ui auto
+
+---- create git project/repository from local git bash to remote git 
+---- it is important to stay in right directory
+$git init
+
+---- clone
+$git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+---- download branch from remote to local
+git checkout -t origin/branch-name
+
+---- .gitignore file modification (vi is still possibility)
+$echo "<something/file/pics>" >> .gitignore
+
+---- check branch status/position
+$git status
+$git branch
+
+---- check all pulled remote and local branches
+$git remote -v show origin
+
+---- sync remote <-> local <branch>
+$git fetch
+downloads all history from the remote tracking branches
+
+---- updates your current local working branch with all new commits
+$git pull
+git pull = git fetch + git merge 
+
+---- restore changes before commit
+$ git restore --staged <file>
+
+---- combines remote tracking branch into current local branch
+$git merge
+
+---- delete merge request before commit
+$git merge --abort
+
+---- resolving merge conflicts with different files status
+$git checkout --ours <file>
+$git checkout --theirs <file>
+
+---- uploads all local branch commits to GitHub
+$git push 
+$git push --set-upstream origin <branch>
+
+---- delete local branch
+$git branch -d <branch>
+
+---- force delete local branch
+$git branch -D <branch>
+
+---- delete remote branch
+$git push origin --delete <branch>
+
+---- clean old removed <branches> and their tracking paths
+$git fetch --prune
+
+---- create <branch> -> switch to new branch
+$git checkout -b <branch>
+$git checkout -b <branch> --track <remote>/<branch> 
+
+$git branch --set-upstream-to origin <branch>
+set tracking <branch> with remote git
+
+---- commit changes in <branch>
+$git add --all
+
+---- snapshots the file in preparation for versioning
+$git add [file]
+
+$git status
+#records file snapshots permanently in version history
+$git commit -m "commit message"
+
+$git push
+
+---- check logs && redo commits
+$git log
+
+---- lists version history for a file, including renames
+$git log --follow [file]
+
+---- shows content differences between two branches
+$git diff [first-branch]...[second-branch]
+
+---- undoes all commits after [commit], preserving changes locally
+$git reset [commit]
+
+---- discard all history and changes back to the specified commit
+$git reset --hard [commit]
+
+---- how to use tags in git
+$git tag <tag_name> <commit_hash>
+$git tag RC1.0 c81c9ab   #example
+$git tag             # lists all tags
+$git log −−oneline   # lists all commits, one commit per line
+
+$ls .git/refs/tags
+RC1.0
+$cat .git/refs/tags/RC1.0
+c81c9abe7c4c8273a11ab7d20a3aac0be54bf00c
