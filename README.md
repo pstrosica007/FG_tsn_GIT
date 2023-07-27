@@ -106,10 +106,23 @@ $ git merge feature1
 $ git push origin master 
 ```
 ### GIT basics
-### GIT specialities
-### some hints (still not the end)
-### some curiosities
-### and some talk (this is the end)
+
+A konečne niečo zaujímavé. Pre mňa asi najpoužívanejšie GIT príkazy za posledných 5 rokov. Viac som ich naozaj nepotrebovala, a to som vystriedala niekoľko projektov/týmov/procesov práce s GIT repo.
+
+![Snímek obrazovky 2023-07-27 v 23 36 56](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/e9f3155e-619d-4e57-8069-bde96a7eac4f)
+
+
+
+### doporučenie
+nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
+
+![Snímek obrazovky 2023-07-27 v 23 40 19](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/c60e0e6f-f993-4316-ba3c-764cdeb8d660)
+
+
+### kuriozitky a ako sa im vyhnúť
+
+### a záverečný pokec (a to už by bol koniec)
+vďaka za pozornosť!
 
 
 
