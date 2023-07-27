@@ -1,5 +1,5 @@
 # Úvod
-Poďme pokecať o git repositorz. Prečo ho naozaj potrebujeme, prečo tu a prečo teraz. 
+Poďme pokecať o git repository. Prečo ho naozaj potrebujeme, prečo tu a prečo teraz. 
 Rýchle vhľad do tejto problematiky a (nielen) základov gitovania.
 
 ## Ciele
