@@ -114,7 +114,11 @@ A konečne niečo zaujímavé. Pre mňa asi najpoužívanejšie GIT príkazy za 
 
 ![Snímek obrazovky 2023-07-27 v 23 36 56](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/e9f3155e-619d-4e57-8069-bde96a7eac4f)
 
-
+P.S.: slušnosť káže sa pod svoju prácu podpísať: 
+```
+Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
+Set your email address: git config --global user.email "MY_NAME@example.com"
+```
 
 ### doporučenie
 1. nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
