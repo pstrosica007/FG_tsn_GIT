@@ -114,6 +114,12 @@ A konečne niečo zaujímavé. Pre mňa asi najpoužívanejšie GIT príkazy za 
 
 ![Snímek obrazovky 2023-07-27 v 23 36 56](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/e9f3155e-619d-4e57-8069-bde96a7eac4f)
 
+![Snímek obrazovky 2023-07-28 v 0 16 53](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/4f0c37b1-4dbd-4312-8f70-28c8dad04b0a)
+
+
+![Snímek obrazovky 2023-07-28 v 0 19 21](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/8f233f39-d961-4b17-aa8e-f276f53fc0bb)
+
+
 P.S.: slušnosť káže sa pod svoju prácu podpísať: 
 ```
 Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
