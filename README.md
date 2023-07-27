@@ -120,7 +120,7 @@ Set your username: git config --global user.name "FIRST_NAME LAST_NAME"
 Set your email address: git config --global user.email "MY_NAME@example.com"
 ```
 
-### doporučenie
+### Doporučenia
 1. nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
 
 ![Snímek obrazovky 2023-07-27 v 23 40 19](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/c60e0e6f-f993-4316-ba3c-764cdeb8d660)
@@ -129,7 +129,7 @@ Set your email address: git config --global user.email "MY_NAME@example.com"
 
 3. GIT kurzy na UDEMY: https://www.udemy.com/topic/git/ 
 
-### nad čím sa naozaj zamyslieť
+### Nad čím sa naozaj zamyslieť
 
 1. bacha na tieto príkazy:
 ```
@@ -147,7 +147,7 @@ nie vždy je možné sa im vyhnúť, ale je lepšie ich nepoužívať automatick
 
 5. čistite, čistite, čistite remote a local branches..a to pravidelne. to pravidelne myslím častejšie ako raz za pol roka. Remote možete nechať automaticky mazať pri merge requestoch, ale tie lokálne Vám zostanú..a neporiadok može byť dosť veľkým nepriateľom.
 
-### a záverečný pokec (a to už by bol koniec)
+### A záverečný pokec (a to už by bol koniec)
 vďaka za pozornosť! ..a GITujte :)
 
 
