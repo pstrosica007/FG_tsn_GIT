@@ -1,7 +1,11 @@
-# Welcome on workshop about GIT 
-FG Tesena about GIT
+# Introduction
+Let's discuss about git repo. Why we really need it, why now and why here.
+Quick view into GIT basics and not only.
 
 ## Workshop goals
+1. to have a tech talk (with no pressure and deadlines)
+2. to convince about git importance and keeping studying with udemy workshops or other youtube tutorials
+3. sharing git "funny" stories (we can call them funny now :D )
 
 ## Workshop structure
 
