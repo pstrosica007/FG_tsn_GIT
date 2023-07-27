@@ -105,6 +105,9 @@ $ git checkout master
 $ git merge feature1
 $ git push origin master 
 ```
+
+A asi najznámejší **GIT BRANCHING MODEL** https://geniusee.com/single-blog/everything-you-need-to-know-about-git-flow-branch-model
+
 ### GIT basics
 
 A konečne niečo zaujímavé. Pre mňa asi najpoužívanejšie GIT príkazy za posledných 5 rokov. Viac som ich naozaj nepotrebovala, a to som vystriedala niekoľko projektov/týmov/procesov práce s GIT repo.
@@ -114,15 +117,34 @@ A konečne niečo zaujímavé. Pre mňa asi najpoužívanejšie GIT príkazy za 
 
 
 ### doporučenie
-nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
+1. nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
 
 ![Snímek obrazovky 2023-07-27 v 23 40 19](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/c60e0e6f-f993-4316-ba3c-764cdeb8d660)
 
+2. GIT ONLINE SIMULATOR: https://learngitbranching.js.org
 
-### kuriozitky a ako sa im vyhnúť
+3. GIT kurzy na UDEMY: https://www.udemy.com/topic/git/ 
+
+### nad čím sa naozaj zamyslieť
+
+1. bacha na tieto príkazy:
+```
+git push --force
+git --hard reset
+git delete
+```
+nie vždy je možné sa im vyhnúť, ale je lepšie ich nepoužívať automaticky ale skor v krízovej situácii
+
+2. ukladajte si svoju prácu. Hlavne ak sa jedná o stovky riadkov nového kódu. Tu je správne slovo ukladajte si svoju prácu **priebežne**. Vždy možete použiť git squash command :) a po squash príkaze treba použiť force push
+
+3. pozor na rebase..a merge konflikty.. vedzte ale, že prinajhoršom možete vždy smazať lokálnu branch a stiahnuť si ju znova z remote gitu. Takže rebase pravidelne. Hlavne ak Vás na nejakom projekte pracuje veľa a merguje sa do master branche často.
+
+4. master branch je posvatná...vzniká pri vzniku repo a je dobré s ňou manipulovať opatrne. Hlavne ak sme v procese desiatok feature a hotfix branchi.
+
+5. čistite, čistite, čistite remote a local branches..a to pravidelne. to pravidelne myslím častejšie ako raz za pol roka. Remote možete nechať automaticky mazať pri merge requestoch, ale tie lokálne Vám zostanú..a neporiadok može byť dosť veľkým nepriateľom.
 
 ### a záverečný pokec (a to už by bol koniec)
-vďaka za pozornosť!
+vďaka za pozornosť! ..a GITujte :)
 
 
 
