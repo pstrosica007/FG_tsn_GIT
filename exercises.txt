@@ -1,0 +1,117 @@
+1. naklonovanie repository z github - lokálne repo
+- repository je vytvorene v remote github
+- u github moze vyzadovat token - najdes v settings/developer settings
+
+$ git clone https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git¨
+
+git clone https://USERNAME@github.com/pstrosica007/FG_tsn_GIT.git
+
+2. vlezieme si do zlozky projektu
+$ ls -ltra
+$ cd FG_tsn_GIT/
+$ ls -ltra
+
+3. práca s  .gitignore
+- ignoruje súbory, ktoré nechcem commitovať
+- typicky súbor s prístupmi
+
+4. git push
+- posunieme zmeny v súboroch do remote git
+
+mozny postup:
+stojime v správnom repository, správna branch
+$ git branch
+$ git status
+
+$ git add all
+$ git add konkretny_file
+pre navrat v pripade smazania suboru
+$ git restore all
+$ git restore konkretny_file
+pripadne taktiez
+$ git restore --staged konkretny_file
+
+$ git commit -m "nejaka sprava - co sme robili ake upravy, kde"
+
+$ git push
+
+5. aktualizacia z remote gitu
+
+mozny postup:
+stojime v správnom repository, správna branch
+$ git branch
+$ git status
+$ git pull
+
+6. vytvorenie novej branche
+
+mozny postup:
+stojime v správnom repository, správna branch
+$ git branch
+$ git status
+
+$ git checkout -b nova_branch
+$ git branch --set-upstream-to origin nova_branch
+
+7. chceme dotiahnut nove commity z master do nasej branche
+
+mozny postup:
+stojime v správnom repository, správna branch
+$ git branch
+$ git status
+
+tu si sme isty, ze sme v branchy nova_branch
+
+$ git fetch origin           # update all tracking branches, including Branch1
+$ git rebase origin/master   # rebase on latest master
+
+$ git push --force origin nova_branch
+
+chceme zamergovat nova_branch do master
+$ git checkout master
+$ git branch
+$ git status
+$ git merge nova_branch
+
+ako zastavim merge
+$ git merge --abort
+
+riesenie konfiltov
+ours - plati nasa verzia suboru
+theirs - plati verzia suboru v remote github repo
+
+$git checkout --ours <file>
+$git checkout --theirs <file>
+
+8. mazanie branches
+
+mozny postup - mazanie lokalnej branche:
+stojime v správnom repository, správna branch
+$ git branch
+$ git status
+
+nemozeme mazat branch, v ktorej stojime
+
+$git branch -d nova_branch
+a ked to nejde po dobrom, tak po zlom
+$git branch -D nova_branch
+
+mozny postup - mazanie remote branche:
+$git push origin --delete nova_branch
+$git fetch --prune
+
+9. reset commitov
+
+mozny postup:
+$ git log
+$ git reset [commit]
+
+$ git reset --soft [commit]
+$ git reset --hard[commit]
+
+10. zlucenie commitov - squash
+
+$ git log
+$ git rebase -i HEAD~2
+$ pick <commit_hash_1> <commit_message_1>
+$ squash <commit_hash_2> <commit_message_2>
