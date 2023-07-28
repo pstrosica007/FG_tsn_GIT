@@ -1,6 +1,6 @@
 # Úvod
 Poďme pokecať o git repository. Prečo ho naozaj potrebujeme, prečo tu a prečo teraz. 
-Rýchle vhľad do tejto problematiky a (nielen) základov gitovania.
+Rýchly vhľad do tejto problematiky a (nielen) základov gitovania.
 
 ## Ciele
 1. pokecať tak technicky bez pracovného stresu z nedokončenej práce..tá na chvíľku počká
