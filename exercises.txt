@@ -2,7 +2,7 @@
 - repository je vytvorene v remote github
 - u github moze vyzadovat token - najdes v settings/developer settings
 
-$ git clone https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git¨
+$ git clone https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git
 
 git clone https://USERNAME@github.com/pstrosica007/FG_tsn_GIT.git
 
