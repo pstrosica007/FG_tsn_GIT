@@ -154,6 +154,9 @@ nie vždy je možné sa im vyhnúť, ale je lepšie ich nepoužívať automatick
 5. čistite, čistite, čistite remote a local branches..a to pravidelne. to pravidelne myslím častejšie ako raz za pol roka. Remote možete nechať automaticky mazať pri merge requestoch, ale tie lokálne Vám zostanú..a neporiadok može byť dosť veľkým nepriateľom.
 
 ### A záverečný pokec (a to už by bol koniec)
+Actions v GITe : https://github.com/pstrosica007/python-project
+CI/CD pipeline : https://semaphoreci.com/blog/cicd-pipeline
+
 vďaka za pozornosť! ..a GITujte :)
 
 
