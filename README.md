@@ -137,9 +137,11 @@ Set your email address: git config --global user.email "MY_NAME@example.com"
 ```
 
 ### Doporučenia
-1. nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu.
+1. nainstalujte si do PyCharmu GitToolBox. Pomože trackovať zmeny v kódu. 
 
 ![Snímek obrazovky 2023-07-27 v 23 40 19](https://github.com/pstrosica007/FG_tsn_GIT/assets/89271768/c60e0e6f-f993-4316-ba3c-764cdeb8d660)
+
+taktiež Vám pomože GIT BASH https://www.geeksforgeeks.org/working-on-git-bash/ ak nechcete použiť windows príkazovú riadku
 
 2. GIT ONLINE SIMULATOR: https://learngitbranching.js.org
 
