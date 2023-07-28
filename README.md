@@ -7,7 +7,17 @@ Rýchly vhľad do tejto problematiky a (nielen) základov gitovania.
 2. presvedčiť (snáď aspoň niekoho) o kráse a doležitosti gitu a prípadne k ďalšiemu učeniu na udemy či youtube atd.
 3. ako sa hovorí sharing is caring...sdieľanie teraz už vtipných príbehov 
 
-## Štruktúra FG workshopu
+## Štruktúra FG workshopu - súbory
+
+readme.md - info k workshopu
+
+git_commands.txt - pomocný dokument s príkazmi
+
+cheatsheet_GIT.pdf - oficiálnejší pomocný dokument s príkazmi
+
+exercises.txt - začíname s GITom
+
+test_git_exercise/* - vyskúšaj ma (MAC)
 
 ## Prečo GIT? 
 **_GIT definícia_**
