@@ -6,6 +6,11 @@ $ git clone https://pstrosica007@github.com/pstrosica007/FG_tsn_GIT.git
 
 git clone https://USERNAME@github.com/pstrosica007/FG_tsn_GIT.git
 
+ak po vas chce prihlasenie - nejedna sa o password, ktorym sa hlasite do uctu na github.com
+musite cez svoj ucet v Settings / Developer option vygenerovat token a ten sluzi ako prihlasenie
+username = username, ktorym sa hlasite do github svojho uctu
+heslo = token
+
 2. vlezieme si do zlozky projektu
 $ ls -ltra
 $ cd FG_tsn_GIT/
